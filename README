@@ -1,0 +1,13 @@
+This manual page allows you to read the minimum vital to use your
+Salix Operating System.
+This man page is written with txt2tags.
+
+For running txt2tags you need python and gettext installed.
+
+Once installed:
+$ man salix
+
+Links:
+- txt2tags HomePage: http://txt2tags.sourceforge.net/index.html
+- txt2tags download: http://txt2tags.sourceforge.net/download.html
+- txt2tags official slackware package: http://txt2tags.javila.net/
