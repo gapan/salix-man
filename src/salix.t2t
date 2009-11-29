@@ -1,0 +1,115 @@
+SALIX
+
+Nov, 2009
+
+%!targer: man
+%!options(html): --mask-email
+
+%!encoding: utf-8
+
+%!postproc(html): <HEAD>      '<HEAD>\n<STYLE TYPE="text/css">\n</STYLE>'
+%!postproc(html): (</STYLE>)  'body { margin:3em               ;} \n\1'
+%!postproc(html): (</STYLE>)  'a    { text-decoration:none     ;} \n\1'
+%!postproc(html): (</STYLE>)  'pre  { background-color:#ffffcc ;} \n\1'
+
+%% LOG
+%%    Nov, 2009 : creation
+
+= Salix =
+
+This manual page allows you to read the minimum vital to use your
+Salix Operating System.
+
+
+= Packages Management =
+
+You have to be root to run these commans (su -)
+
+:  **slapt-get --update**
+Retrieves package data from MIRROR location.
+:  **slapt-get --upgrade**
+Upgrade installed packages if newer versions are available.
+:  **slapt-get -i PackageX(s)**
+Install package(s) from the mirrors.
+:  **slapt-get --remove Package(s)**
+Remove  specified  package(s)
+:  **slapt-get --list**
+List all packages, installed and available.
+:  **slapt-get --search [expression]**
+Search  available  packages. Applies POSIX and extended regular
+expression to the names, versions, locations, and descriptions
+of packages.
+:  **installpkg /path/to/PackageX**
+Installs  single  or  multiple  *.txz  (or  .tgz, .tlz, .tbz) binary
+packages designed for use with Salix or the Slackware Linux
+distribution onto your system.
+:  **upgradepkg /path/to/PackageY**
+Upgrades a package from an older version to a newer one.
+
+
+= DOTNEW =
+
+:  **dotnew**
+dotnew is a utility to help with the management of .new system
+configuration files .dotnew uses dialog menus (or Xdialog if it is
+installed and if you are running under X11) to present the user with
+a menu for each new configuration file present in his system.
+
+
+= Services =
+
+:  **servicesetup**
+All availables services in /etc/rc.d (cups, gdm, sshd, ...) can be
+listed, stopped, started with this Dialog interface (or Xdialog if it is
+installed and if you are running under X11).
+
+
+= Modules =
+
+Modules are pieces of code that can be loaded and unloaded into the
+kernel upon demand. They extend the functionality of the kernel
+without the need to reboot the system.
+
+:  **lsmod**
+List all loaded modules.
+:  **modprobe -v moduleX**
+Load moduleX.
+:  **rmmod -v moduleX**
+Unload moduleX.
+:  **echo "moduleX" >> /etc/modprobe.d/modprobe.conf**
+Force the automatic loading of a module.
+:  **echo "blacklist moduleX" >> /etc/modprobe.d/blacklist.conf**
+Prevent loading of a module.
+
+
+= Users/Groups management =
+
+:  **usersetup**
+Users and Groups management can be done with this Dialog interface
+(or Xdialog if it is installed and if you are running under X11).
+
+
+= Online Help =
+
+:  **IRC**
+Join the //#salix// channel on irc.freenode.net network.
+:  **Jabber / XMPP**
+Join the //salix// chatroom on the chat.meticul.eu network.
+:  **Support Forum**
+http://www.salixos.org/forum
+:  **Mailing-List : salix-main AT lists.sourceforge.net**
+Registration and archives :
+https://lists.sourceforge.net/lists/listinfo/salix-main
+
+
+= SEE ALSO =
+modprobe(8), modprobe.conf(5), pkgtool(8), slapt-get(8)
+
+
+= COPYRIGHT =
+
+Copyright (C) 2009 Frederic Galusik, Salix OS.
+
+This document is written under the WTFPL free licence -
+Do What The Fuck You Want To Public License.
+( http://sam.zoy.org/wtfpl/ )
