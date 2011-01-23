@@ -1,19 +1,17 @@
 SALIX
 
-Nov, 2009
+Jan, 2011
 
 %!targer: man
-%!options(html): --mask-email
+%!options(html): --mask-email --toc
 
-%!encoding: utf-8
+%!encoding: UTF-8
 
-%!postproc(html): <HEAD>      '<HEAD>\n<STYLE TYPE="text/css">\n</STYLE>'
-%!postproc(html): (</STYLE>)  'body { margin:3em               ;} \n\1'
-%!postproc(html): (</STYLE>)  'a    { text-decoration:none     ;} \n\1'
-%!postproc(html): (</STYLE>)  'pre  { background-color:#ffffcc ;} \n\1'
+%!postproc(html): <HEAD> '<HEAD>\n<STYLE>body{margin:3em;} pre{background:#ffc;}</STYLE>'
 
 %% LOG
 %%    Nov, 2009 : creation
+%%    Jan, 2011 : update for Salix-13.2
 
 = Salix =
 
@@ -21,15 +19,15 @@ This manual page allows you to read the minimum vital to use your
 Salix Operating System.
 
 
-= Packages Management =
+= Package Management =
 
-You have to be root to run these commans (su -)
+You have to be root to run these commands (su -)
 
 :  **slapt-get --update**
 Retrieves package data from MIRROR location.
 :  **slapt-get --upgrade**
 Upgrade installed packages if newer versions are available.
-:  **slapt-get -i PackageX(s)**
+:  **slapt-get -i Package(s)**
 Install package(s) from the mirrors.
 :  **slapt-get --remove Package(s)**
 Remove  specified  package(s)
@@ -39,11 +37,11 @@ List all packages, installed and available.
 Search  available  packages. Applies POSIX and extended regular
 expression to the names, versions, locations, and descriptions
 of packages.
-:  **installpkg /path/to/PackageX**
+:  **installpkg /path/to/Package**
 Installs  single  or  multiple  *.txz  (or  .tgz, .tlz, .tbz) binary
 packages designed for use with Salix or the Slackware Linux
 distribution onto your system.
-:  **upgradepkg /path/to/PackageY**
+:  **upgradepkg /path/to/Package**
 Upgrades a package from an older version to a newer one.
 
 
@@ -51,7 +49,7 @@ Upgrades a package from an older version to a newer one.
 
 :  **dotnew**
 dotnew is a utility to help with the management of .new system
-configuration files .dotnew uses dialog menus (or Xdialog if it is
+configuration files .dotnew uses dialog menus (or GTK if it is
 installed and if you are running under X11) to present the user with
 a menu for each new configuration file present in his system.
 
@@ -59,8 +57,8 @@ a menu for each new configuration file present in his system.
 = Services =
 
 :  **servicesetup**
-All availables services in /etc/rc.d (cups, gdm, sshd, ...) can be
-listed, stopped, started with this Dialog interface (or Xdialog if it is
+All available services in /etc/rc.d (cups, gdm, sshd, ...) can be
+listed, stopped, started with this Dialog interface (or GTK if it is
 installed and if you are running under X11).
 
 
@@ -72,13 +70,13 @@ without the need to reboot the system.
 
 :  **lsmod**
 List all loaded modules.
-:  **modprobe -v moduleX**
-Load moduleX.
-:  **rmmod -v moduleX**
-Unload moduleX.
-:  **echo "moduleX" >> /etc/modprobe.d/modprobe.conf**
+:  **modprobe -v module**
+Load module.
+:  **rmmod -v module**
+Unload module.
+:  **echo "module" >> /etc/modprobe.d/modprobe.conf**
 Force the automatic loading of a module.
-:  **echo "blacklist moduleX" >> /etc/modprobe.d/blacklist.conf**
+:  **echo "blacklist module" >> /etc/modprobe.d/blacklist.conf**
 Prevent loading of a module.
 
 
@@ -86,7 +84,20 @@ Prevent loading of a module.
 
 :  **usersetup**
 Users and Groups management can be done with this Dialog interface
-(or Xdialog if it is installed and if you are running under X11).
+(or GTK if it is installed and if you are running under X11).
+
+
+= Wire/Wireless network connection manager =
+
+: **Wicd**
+Wire and wireless network connection can be managed with one tool.
+Wicd is a service, it uses built-in linux wireless-tools, such as 
+ifconfig and iwconfig to get and configure network info.
+You need a client to connect to it.
+: **wicd-gtk --no-tray**
+This command start the GTK Wicd client without system tray icon.
+: **wicd-curses**
+This command start the ncurses Wicd client. X11 is not needed.
 
 
 = Online Help =
@@ -103,12 +114,19 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 
 
 = SEE ALSO =
+
 modprobe(8), modprobe.conf(5), pkgtool(8), slapt-get(8)
+wicd(8)
+
+
+= AUTHOR =
+
+Frederic Galusik <fredg~at~salixos~dot~org>
 
 
 = COPYRIGHT =
 
-Copyright (C) 2009 Frederic Galusik, Salix OS.
+Copyright (C) 2009-%%date(%Y) Salix OS.
 
 This document is written under the WTFPL free licence -
 Do What The Fuck You Want To Public License.
