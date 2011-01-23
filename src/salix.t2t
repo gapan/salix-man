@@ -89,15 +89,25 @@ Users and Groups management can be done with this Dialog interface
 
 = Wire/Wireless network connection manager =
 
-: **Wicd**
-Wire and wireless network connection can be managed with one tool.
+Wire and wireless network connection can be managed with one tool, 
+Wicd.
 Wicd is a service, it uses built-in linux wireless-tools, such as 
 ifconfig and iwconfig to get and configure network info.
 You need a client to connect to it.
-: **wicd-gtk --no-tray**
+:  **wicd-gtk --no-tray**
 This command start the GTK Wicd client without system tray icon.
 : **wicd-curses**
 This command start the ncurses Wicd client. X11 is not needed.
+
+
+= Salix Developpement =
+: **OpenSource**
+All Salix projects (tools, guide, liveCD, ...) are on a public
+subversion repository hosted on SourceForge:
+http://salix.svn.sourceforge.net/viewvc/salix/
+: **Bugs/Wishes/...**
+Please use our BugTracker:
+http://sourceforge.net/apps/trac/salix/report
 
 
 = Online Help =
