@@ -34,15 +34,21 @@ Remove  specified  package(s)
 :  **slapt-get --list**
 List all packages, installed and available.
 :  **slapt-get --search [expression]**
-Search  available  packages. Applies POSIX and extended regular
+Search  available packages. Applies POSIX and extended regular
 expression to the names, versions, locations, and descriptions
 of packages.
-:  **installpkg /path/to/Package**
-Installs  single  or  multiple  *.txz  (or  .tgz, .tlz, .tbz) binary
-packages designed for use with Salix or the Slackware Linux
-distribution onto your system.
-:  **upgradepkg /path/to/Package**
-Upgrades a package from an older version to a newer one.
+:  **spkg -i /path/to/Package**
+Installs single or multiple *.txz (or .tgz, .tlz, .tbz) binary
+packages, designed for use with Salix or the Slackware Linux
+distribution, that are stored locally, onto your system. The original
+Slackware **installpkg** command can also be used.
+:  **spkg -u /path/to/Package**
+Upgrades a package from an older version to a newer one, using locally
+stored package(s). The original Slackware **upgradepkg** command can
+also be used.
+:  **spkg -d package-name(s)**
+Removes the specified package(s) from the system. The original
+Slackware **removepkg** command can also be used.
 
 
 = DOTNEW =
@@ -87,25 +93,25 @@ Users and Groups management can be done with this Dialog interface
 (or GTK if it is installed and if you are running under X11).
 
 
-= Wire/Wireless network connection manager =
+= Wired/Wireless network connection manager =
 
-Wire and wireless network connection can be managed with one tool, 
+Wired and wireless network connection can be managed with one tool, 
 Wicd.
 Wicd is a service, it uses built-in linux wireless-tools, such as 
 ifconfig and iwconfig to get and configure network info.
 You need a client to connect to it.
 :  **wicd-gtk --no-tray**
 This command start the GTK Wicd client without system tray icon.
-: **wicd-curses**
+:  **wicd-curses**
 This command start the ncurses Wicd client. X11 is not needed.
 
 
 = Salix Developpement =
-: **OpenSource**
+:  **OpenSource**
 All Salix projects (tools, guide, liveCD, ...) are on a public
 subversion repository hosted on SourceForge:
 http://salix.svn.sourceforge.net/viewvc/salix/
-: **Bugs/Wishes/...**
+:  **Bugs/Wishes/...**
 Please use our BugTracker:
 http://sourceforge.net/apps/trac/salix/report
 
