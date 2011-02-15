@@ -34,9 +34,15 @@ Remove  specified  package(s)
 :  **slapt-get --list**
 List all packages, installed and available.
 :  **slapt-get --search [expression]**
-Search  available packages. Applies POSIX and extended regular
+Search available packages. Applies POSIX and extended regular
 expression to the names, versions, locations, and descriptions
 of packages.
+:  **slapt-src --upgrade**
+Retrieve SlackBuild data from SlackBuild source repositories.
+:  **slapt-src --search [expression]**
+Search available SlackBuilds.
+*  **slapt-src -i SlackBuild(s)**
+Build and install specified SlackBuilds.
 :  **spkg -i /path/to/Package**
 Installs single or multiple *.txz (or .tgz, .tlz, .tbz) binary
 packages, designed for use with Salix or the Slackware Linux
@@ -131,8 +137,8 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 
 = SEE ALSO =
 
-modprobe(8), modprobe.conf(5), pkgtool(8), slapt-get(8)
-wicd(8)
+modprobe(8), modprobe.conf(5), pkgtool(8), slapt-get(8), spkg(8),
+slapt-src(8), wicd(8)
 
 
 = AUTHOR =
