@@ -37,7 +37,7 @@ List all packages, installed and available.
 Search available packages. Applies POSIX and extended regular
 expression to the names, versions, locations, and descriptions
 of packages.
-:  **slapt-src --upgrade**
+:  **slapt-src --update**
 Retrieve SlackBuild data from SlackBuild source repositories.
 :  **slapt-src --search [expression]**
 Search available SlackBuilds.
