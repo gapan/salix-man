@@ -30,7 +30,7 @@ Upgrade installed packages if newer versions are available.
 :  **slapt-get -i Package(s)**
 Install package(s) from the mirrors.
 :  **slapt-get --remove Package(s)**
-Remove  specified  package(s)
+Remove specified package(s)
 :  **slapt-get --list**
 List all packages, installed and available.
 :  **slapt-get --search [expression]**
@@ -41,7 +41,7 @@ of packages.
 Retrieve SlackBuild data from SlackBuild source repositories.
 :  **slapt-src --search [expression]**
 Search available SlackBuilds.
-*  **slapt-src -i SlackBuild(s)**
+:  **slapt-src -i SlackBuild(s)**
 Build and install specified SlackBuilds.
 :  **spkg -i /path/to/Package**
 Installs single or multiple *.txz (or .tgz, .tlz, .tbz) binary
@@ -153,3 +153,4 @@ Copyright (C) 2009-%%date(%Y) Salix OS.
 This document is written under the WTFPL free licence -
 Do What The Fuck You Want To Public License.
 ( http://sam.zoy.org/wtfpl/ )
+
