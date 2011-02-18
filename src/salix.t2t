@@ -13,13 +13,13 @@ Jan, 2011
 %%    Nov, 2009 : creation
 %%    Jan, 2011 : update for Salix-13.2
 
-= Salix =
+= SALIX =
 
 This manual page allows you to read the minimum vital to use your
 Salix Operating System.
 
 
-= Package Management =
+= PACKAGE MANAGEMENT =
 
 You have to be root to run these commands (su -)
 
@@ -66,7 +66,7 @@ installed and if you are running under X11) to present the user with
 a menu for each new configuration file present in his system.
 
 
-= Services =
+= SERVICES =
 
 :  **servicesetup**
 All available services in /etc/rc.d (cups, gdm, sshd, ...) can be
@@ -74,7 +74,7 @@ listed, stopped, started with this Dialog interface (or GTK if it is
 installed and if you are running under X11).
 
 
-= Modules =
+= MODULES =
 
 Modules are pieces of code that can be loaded and unloaded into the
 kernel upon demand. They extend the functionality of the kernel
@@ -92,14 +92,14 @@ Force the automatic loading of a module.
 Prevent loading of a module.
 
 
-= Users/Groups management =
+= USER/GROUP MANAGEMENT =
 
 :  **usersetup**
 Users and Groups management can be done with this Dialog interface
 (or GTK if it is installed and if you are running under X11).
 
 
-= Wired/Wireless network connection manager =
+= WIRED/WIRELESS NETWORK CONNECTION MANAGER =
 
 Wired and wireless network connection can be managed with one tool, 
 Wicd.
@@ -112,7 +112,8 @@ This command start the GTK Wicd client without system tray icon.
 This command start the ncurses Wicd client. X11 is not needed.
 
 
-= Salix Development =
+= SALIX DEVELOPMENT =
+
 :  **OpenSource**
 All Salix projects (tools, guide, liveCD, ...) are on a public
 subversion repository hosted on SourceForge:
@@ -122,7 +123,7 @@ Please use our BugTracker:
 http://sourceforge.net/apps/trac/salix/report
 
 
-= Online Help =
+= ONLINE HELP =
 
 :  **IRC**
 Join the //#salix// channel on irc.freenode.net network.
