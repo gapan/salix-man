@@ -112,7 +112,7 @@ This command start the GTK Wicd client without system tray icon.
 This command start the ncurses Wicd client. X11 is not needed.
 
 
-= Salix Developpement =
+= Salix Development =
 :  **OpenSource**
 All Salix projects (tools, guide, liveCD, ...) are on a public
 subversion repository hosted on SourceForge:
