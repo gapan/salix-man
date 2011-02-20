@@ -71,6 +71,8 @@ clock and Network Time Protocol synchronization.
 A tool that helps set the keyboard map to be used for the linux 
 terminal. It can also be used to set IBus or SCIM to be enabled or 
 disabled.
+:  **localesetup**
+A tool that sets the system's locale.
 :  **usersetup**
 Users and Groups management can be done with this Dialog interface
 (or GTK if it is installed and if you are running under X11).
@@ -141,8 +143,8 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 = SEE ALSO =
 
 clocksetup(8), ifconfig(8), iwconfig(8), keyboardsetup(8), 
-modprobe(8), modprobe.conf(5), pkgtool(8), slapt-get(8), spkg(8), 
-slapt-src(8), wicd(8)
+localesetup(8), modprobe(8), modprobe.conf(5), pkgtool(8), 
+slapt-get(8), spkg(8), slapt-src(8), wicd(8)
 
 
 = AUTHOR =
