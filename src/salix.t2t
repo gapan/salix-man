@@ -57,17 +57,19 @@ Removes the specified package(s) from the system. The original
 Slackware **removepkg** command can also be used.
 
 
-= DOTNEW =
+= SALIXTOOLS =
 
 :  **dotnew**
-dotnew is a utility to help with the management of .new system
+Dotnew is a utility to help with the management of .new system
 configuration files .dotnew uses dialog menus (or GTK if it is
 installed and if you are running under X11) to present the user with
 a menu for each new configuration file present in his system.
-
-
-= SERVICES =
-
+:  **clocksetup**
+A tool that helps set the system's date, time, timezone, hardware 
+clock and Network Time Protocol synchronization.
+:  **usersetup**
+Users and Groups management can be done with this Dialog interface
+(or GTK if it is installed and if you are running under X11).
 :  **servicesetup**
 All available services in /etc/rc.d (cups, gdm, sshd, ...) can be
 listed, stopped, started with this Dialog interface (or GTK if it is
@@ -90,13 +92,6 @@ Unload module.
 Force the automatic loading of a module.
 :  **echo "blacklist module" >> /etc/modprobe.d/blacklist.conf**
 Prevent loading of a module.
-
-
-= USER/GROUP MANAGEMENT =
-
-:  **usersetup**
-Users and Groups management can be done with this Dialog interface
-(or GTK if it is installed and if you are running under X11).
 
 
 = WIRED/WIRELESS NETWORK CONNECTION MANAGER =
@@ -141,8 +136,9 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 
 = SEE ALSO =
 
-ifconfig(8), iwconfig(8), modprobe(8), modprobe.conf(5), 
-pkgtool(8), slapt-get(8), spkg(8), slapt-src(8), wicd(8)
+clocksetup(8), ifconfig(8), iwconfig(8), modprobe(8), 
+modprobe.conf(5), pkgtool(8), slapt-get(8), spkg(8), 
+slapt-src(8), wicd(8)
 
 
 = AUTHOR =
