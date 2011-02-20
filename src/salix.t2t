@@ -2,7 +2,7 @@ SALIX
 
 Jan, 2011
 
-%!targer: man
+%!target: man
 %!options(html): --mask-email --toc
 
 %!encoding: UTF-8
@@ -103,8 +103,11 @@ Users and Groups management can be done with this Dialog interface
 
 Wired and wireless network connection can be managed with one tool, 
 Wicd.
-Wicd is a service, it uses built-in linux wireless-tools, such as 
-ifconfig and iwconfig to get and configure network info.
+Wicd uses built-in linux wireless-tools, such as **ifconfig** 
+and **iwconfig** to get and configure network info.
+Note that wicd and wireless must be activated in the startup 
+services in order to make wireless networks visible on Wicd.
+
 You need a client to connect to it.
 :  **wicd-gtk --no-tray**
 This command start the GTK Wicd client without system tray icon.
@@ -138,8 +141,8 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 
 = SEE ALSO =
 
-modprobe(8), modprobe.conf(5), pkgtool(8), slapt-get(8), spkg(8),
-slapt-src(8), wicd(8)
+ifconfig(8), iwconfig(8), modprobe(8), modprobe.conf(5), 
+pkgtool(8), slapt-get(8), spkg(8), slapt-src(8), wicd(8)
 
 
 = AUTHOR =
