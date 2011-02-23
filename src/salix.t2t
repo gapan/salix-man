@@ -94,8 +94,9 @@ List all loaded modules.
 Load module.
 :  **rmmod -v module**
 Unload module.
-:  **cd /etc/modprobe.d && touch file.conf && echo "module_name" >> file.conf**
+:  **echo "module_name" >> /etc/modprobe.d/file.conf**
 Force the automatic loading of a module.
+The file file.conf must be created first.
 You can give the name you want to file.conf (ie. atboot.conf)
 :  **echo "blacklist module" >> /etc/modprobe.d/blacklist.conf**
 Prevent loading of a module.
