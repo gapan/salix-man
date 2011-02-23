@@ -59,27 +59,27 @@ Slackware **removepkg** command can also be used.
 
 = SALIXTOOLS =
 
+:  **clocksetup**
+A tool that helps set the system's date, time, timezone, hardware
+clock and Network Time Protocol synchronization.
 :  **dotnew**
 Dotnew is a utility to help with the management of .new system
 configuration files .dotnew uses dialog menus (or GTK if it is
 installed and if you are running under X11) to present the user with
 a menu for each new configuration file present in his system.
-:  **clocksetup**
-A tool that helps set the system's date, time, timezone, hardware 
-clock and Network Time Protocol synchronization.
 :  **keyboardsetup**
-A tool that helps set the keyboard map to be used for the linux 
-terminal. It can also be used to set IBus or SCIM to be enabled or 
+A tool that helps set the keyboard map to be used for the linux
+terminal. It can also be used to set IBus or SCIM to be enabled or
 disabled.
 :  **localesetup**
 A tool that sets the system's locale.
-:  **usersetup**
-Users and Groups management can be done with this Dialog interface
-(or GTK if it is installed and if you are running under X11).
 :  **servicesetup**
 All available services in /etc/rc.d (cups, gdm, sshd, ...) can be
 listed, stopped, started with this Dialog interface (or GTK if it is
 installed and if you are running under X11).
+:  **usersetup**
+Users and Groups management can be done with this Dialog interface
+(or GTK if it is installed and if you are running under X11).
 
 
 = MODULES =
@@ -94,19 +94,20 @@ List all loaded modules.
 Load module.
 :  **rmmod -v module**
 Unload module.
-:  **echo "module" >> /etc/modprobe.d/modprobe.conf**
+:  **cd /etc/modprobe.d && touch file.conf && echo "module_name" >> file.conf**
 Force the automatic loading of a module.
+You can give the name you want to file.conf (ie. atboot.conf)
 :  **echo "blacklist module" >> /etc/modprobe.d/blacklist.conf**
 Prevent loading of a module.
 
 
 = WIRED/WIRELESS NETWORK CONNECTION MANAGER =
 
-Wired and wireless network connection can be managed with one tool, 
+Wired and wireless network connection can be managed with one tool,
 Wicd.
-Wicd uses built-in linux wireless-tools, such as **ifconfig** 
+Wicd uses built-in linux wireless-tools, such as **ifconfig**
 and **iwconfig** to get and configure network info.
-Note that wicd and wireless must be activated in the startup 
+Note that wicd and wireless must be activated in the startup
 services in order to make wireless networks visible on Wicd.
 
 You need a client to connect to it.
@@ -142,8 +143,8 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 
 = SEE ALSO =
 
-clocksetup(8), ifconfig(8), iwconfig(8), keyboardsetup(8), 
-localesetup(8), modprobe(8), modprobe.conf(5), pkgtool(8), 
+clocksetup(8), ifconfig(8), iwconfig(8), keyboardsetup(8),
+localesetup(8), modprobe(8), modprobe.conf(5), pkgtool(8),
 slapt-get(8), spkg(8), slapt-src(8), wicd(8)
 
 
@@ -159,4 +160,3 @@ Copyright (C) 2009-%%date(%Y) Salix OS.
 This document is written under the WTFPL free licence -
 Do What The Fuck You Want To Public License.
 ( http://sam.zoy.org/wtfpl/ )
-
