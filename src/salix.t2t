@@ -150,7 +150,7 @@ localesetup(8), modprobe(8), modprobe.conf(5), pkgtool(8),
 slapt-get(8), spkg(8), slapt-src(8), wicd(8)
 
 
-= AUTHOR =
+= AUTHORS =
 
 The salix manpage was originally written by Frederic Galusik
 <fredg~at~salixos~dot~org> and subsequently edited by George Vlahavas
