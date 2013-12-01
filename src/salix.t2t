@@ -32,7 +32,9 @@ Search for, install and update SlackBuilds from the repositories.
 **Sourcery** provides the same functionality with a graphical interface.
 :  **spkg**
 Install, update and remove packages that you have downloaded/built
-locally.
+locally. This is a faster alternative to the Slackware **pkgtools**
+(**installpkg**, **upgradepkg** and **removepkg**) which are also
+available.
 
 
 = SALIXTOOLS =
@@ -54,6 +56,7 @@ List, stop or start system services using the command line.
 List, stop or start system services using a dialog-based interface.
 :  **usersetup**
 Users and Groups management.
+
 
 Most of the tools mentioned here have graphical (GTK) counterparts.
 
