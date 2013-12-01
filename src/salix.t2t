@@ -1,6 +1,6 @@
 SALIX
 
-Jan, 2011
+%%date(%b, %Y)
 
 %!target: man
 %!options(html): --mask-email --toc
