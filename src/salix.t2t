@@ -94,9 +94,9 @@ running in your system tray. Otherwise you can run one of **Wicd**'s
 clients:
 
 :  **wicd-gtk --no-tray**
-This command start the GTK Wicd client without system tray icon.
+This command starts the GTK Wicd client without system tray icon.
 :  **wicd-curses**
-This command start the ncurses Wicd client. X11 is not needed.
+This command starts the ncurses Wicd client. X11 is not needed.
 
 
 If you don't have wicd installed, you can configure your wired network
