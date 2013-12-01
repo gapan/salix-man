@@ -87,9 +87,11 @@ Wired and wireless network connection can be managed with a single tool,
 **Wicd** uses built-in linux wireless-tools, such as **ifconfig**
 and **iwconfig** to get and configure network info.
 Note that wicd and wireless must be activated in the startup
-services in order to make wireless networks visible on Wicd.
+services in order to make wireless networks visible on Wicd. If you are
+using a Desktop Environment, you should normally find a **Wicd** icon
+running in your system tray. Otherwise you can run one of **Wicd**'s
+clients:
 
-You need a client to connect to it.
 :  **wicd-gtk --no-tray**
 This command start the GTK Wicd client without system tray icon.
 :  **wicd-curses**
