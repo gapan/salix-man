@@ -9,9 +9,6 @@ Jan, 2011
 
 %!postproc(html): <HEAD> '<HEAD>\n<STYLE>body{margin:3em;} pre{background:#ffc;}</STYLE>'
 
-%% LOG
-%%    Nov, 2009 : creation
-%%    Jan, 2011 : update for Salix-13.2
 
 = SALIX =
 
