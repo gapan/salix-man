@@ -135,9 +135,20 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 
 = SEE ALSO =
 
-clocksetup(8), ifconfig(8), iwconfig(8), keyboardsetup(8),
-localesetup(8), modprobe(8), modprobe.conf(5), pkgtool(8),
-slapt-get(8), spkg(8), slapt-src(8), wicd(8)
+**clocksetup**(8),
+**keyboardsetup**(8),
+**localesetup**(8),
+**modprobe**(8),
+**modprobe.conf**(5),
+**pkgtool**(8),
+**reposetup**(8),
+**service**(8),
+**servicesetup**(8),
+**slapt-get**(8),
+**spi**(8),
+**spkg**(8),
+**slapt-src**(8),
+**wicd**(8)
 
 
 = AUTHORS =
