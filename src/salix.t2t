@@ -135,7 +135,7 @@ Join the //#salix// channel on irc.freenode.net network.
 :  **Jabber / XMPP**
 Join the //salix// chatroom on the chat.meticul.eu network.
 :  **Support Forum**
-http://www.salixos.org/forum
+http://forum.salixos.org
 :  **Mailing-List : salix-main AT lists.sourceforge.net**
 Registration and archives :
 https://lists.sourceforge.net/lists/listinfo/salix-main
@@ -150,7 +150,9 @@ slapt-get(8), spkg(8), slapt-src(8), wicd(8)
 
 = AUTHOR =
 
-Frederic Galusik <fredg~at~salixos~dot~org>
+The salix manpage was originally written by Frederic Galusik
+<fredg~at~salixos~dot~org> and subsequently edited by George Vlahavas
+<vlahavas~at~gmail~dot~com>.
 
 
 = COPYRIGHT =
