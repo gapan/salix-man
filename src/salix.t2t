@@ -100,9 +100,9 @@ Prevent loading of a module.
 
 = WIRED/WIRELESS NETWORK CONNECTION MANAGER =
 
-Wired and wireless network connection can be managed with one tool,
-Wicd.
-Wicd uses built-in linux wireless-tools, such as **ifconfig**
+Wired and wireless network connection can be managed with a single tool,
+**Wicd**.
+**Wicd** uses built-in linux wireless-tools, such as **ifconfig**
 and **iwconfig** to get and configure network info.
 Note that wicd and wireless must be activated in the startup
 services in order to make wireless networks visible on Wicd.
@@ -112,6 +112,10 @@ You need a client to connect to it.
 This command start the GTK Wicd client without system tray icon.
 :  **wicd-curses**
 This command start the ncurses Wicd client. X11 is not needed.
+
+If you don't have wicd installed, you can configure your wired network
+using **netconfig** (run it from a terminal with superuser priviliges).
+**netconfig** doesn't support wireless connections.
 
 
 = SALIX DEVELOPMENT =
