@@ -18,65 +18,44 @@ Salix Operating System.
 
 = PACKAGE MANAGEMENT =
 
-You have to be root to run these commands (su -)
-
-:  **slapt-get --update**
-Retrieves package data from MIRROR location.
-:  **slapt-get --upgrade**
-Upgrade installed packages if newer versions are available.
-:  **slapt-get -i Package(s)**
-Install package(s) from the mirrors.
-:  **slapt-get --remove Package(s)**
-Remove specified package(s)
-:  **slapt-get --list**
-List all packages, installed and available.
-:  **slapt-get --search [expression]**
-Search available packages. Applies POSIX and extended regular
-expression to the names, versions, locations, and descriptions
-of packages.
-:  **slapt-src --update**
-Retrieve SlackBuild data from SlackBuild source repositories.
-:  **slapt-src --search [expression]**
-Search available SlackBuilds.
-:  **slapt-src -i SlackBuild(s)**
-Build and install specified SlackBuilds.
-:  **spkg -i /path/to/Package**
-Installs single or multiple *.txz (or .tgz, .tlz, .tbz) binary
-packages, designed for use with Salix or the Slackware Linux
-distribution, that are stored locally, onto your system. The original
-Slackware **installpkg** command can also be used.
-:  **spkg -u /path/to/Package**
-Upgrades a package from an older version to a newer one, using locally
-stored package(s). The original Slackware **upgradepkg** command can
-also be used.
-:  **spkg -d package-name(s)**
-Removes the specified package(s) from the system. The original
-Slackware **removepkg** command can also be used.
+:  **spi**
+Search for, install and update packages and SlackBuilds from the
+repositories. **spi** is an wrapper around **slapt-get** and
+**slapt-src** and is more convenient to use, but only offers the most
+basic functionality of both. If you want to use more advanced features
+of these tools, you should use them directly.
+:  **slapt-get**
+Search for, install and update packages from the repositories.
+**Gslapt** provides the same functionality with a graphical interface.
+:  **slapt-src**
+Search for, install and update SlackBuilds from the repositories.
+**Sourcery** provides the same functionality with a graphical interface.
+:  **spkg**
+Install, update and remove packages that you have downloaded/built
+locally.
 
 
 = SALIXTOOLS =
 
 :  **clocksetup**
-A tool that helps set the system's date, time, timezone, hardware
-clock and Network Time Protocol synchronization.
+Set the system time and date.
 :  **dotnew**
 Dotnew is a utility to help with the management of .new system
-configuration files .dotnew uses dialog menus (or GTK if it is
-installed and if you are running under X11) to present the user with
-a menu for each new configuration file present in his system.
+configuration files.
 :  **keyboardsetup**
-A tool that helps set the keyboard map to be used for the linux
-terminal. It can also be used to set IBus or SCIM to be enabled or
-disabled.
+Select your preferred keymap and keyboard settings.
 :  **localesetup**
-A tool that sets the system's locale.
+Set the system-wide localization.
+:  **reposetup**
+Select your preferred repository mirror.
+:  **service**
+List, stop or start system services using the command line.
 :  **servicesetup**
-All available services in /etc/rc.d (cups, gdm, sshd, ...) can be
-listed, stopped, started with this Dialog interface (or GTK if it is
-installed and if you are running under X11).
+List, stop or start system services using a dialog-based interface.
 :  **usersetup**
-Users and Groups management can be done with this Dialog interface
-(or GTK if it is installed and if you are running under X11).
+Users and Groups management.
+
+Most of the tools mentioned here have graphical (GTK) counterparts.
 
 
 = MODULES =
