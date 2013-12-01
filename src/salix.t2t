@@ -116,13 +116,18 @@ This command start the ncurses Wicd client. X11 is not needed.
 
 = SALIX DEVELOPMENT =
 
-:  **OpenSource**
-All Salix projects (tools, guide, liveCD, ...) are on a public
-subversion repository hosted on SourceForge:
-http://salix.svn.sourceforge.net/viewvc/salix/
+:  **Translate**
+You can help with translating various componenents of the distribution
+using. Visit the following page for more details:
+http://salixos.org/translate.html
+:  **Package Submissions**
+You can submit packages for inclusion in the Salix repositories using
+our package submission tracker (but please read the wiki about package
+building rules are submission guidelines first). You can find a link in
+the salix main project page.
 :  **Bugs/Wishes/...**
-Please use our BugTracker:
-http://sourceforge.net/apps/trac/salix/report
+You can either use our bugtracker (you can find a link in the salix main
+project page) or the Salix forums.
 
 
 = ONLINE HELP =
