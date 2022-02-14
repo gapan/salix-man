@@ -84,24 +84,26 @@ Prevent loading of a module.
 = WIRED/WIRELESS NETWORK CONNECTION MANAGER =
 
 Wired and wireless network connection can be managed with a single tool,
-**Wicd**.
-**Wicd** uses built-in linux wireless-tools, such as **ifconfig**
-and **iwconfig** to get and configure network info.
-Note that wicd and wireless must be activated in the startup
-services in order to make wireless networks visible on Wicd. If you are
-using a Desktop Environment, you should normally find a **Wicd** icon
-running in your system tray. Otherwise you can run one of **Wicd**'s
-clients:
+**Network Manager**.  **Network Manager** uses built-in linux
+wireless-tools, such as **ifconfig** and **iwconfig** to get and
+configure network info.  Note that networkmanager and wireless
+must be activated in the startup services in order to make
+wireless networks visible on Network Manager's interface. If you
+are using a Desktop Environment, you should normally find a
+**Network Manager** icon running in your system tray. Otherwise you can run
+one of its clients:
 
-:  **wicd-gtk --no-tray**
-This command starts the GTK Wicd client without system tray icon.
-:  **wicd-curses**
-This command starts the ncurses Wicd client. X11 is not needed.
+:  **nm-applet**
+This command starts the Network Manager client with a system tray icon.
+:  **nmtui**
+This command starts the terminal curses client. X11 is not needed.
+:  **nmcli**
+This is command-line tool for controlling NetworkManager.
 
 
 If you don't have wicd installed, you can configure your wired network
-using **netconfig** (run it from a terminal with superuser priviliges).
-**netconfig** doesn't support wireless connections.
+using **netsetup** (run it from a terminal with superuser priviliges).
+**netsetup** doesn't support wireless connections.
 
 
 = SALIX DEVELOPMENT =
@@ -123,11 +125,9 @@ project page) or the Salix forums.
 = ONLINE HELP =
 
 :  **IRC**
-Join the //#salix// channel on //irc.freenode.net// network.
-:  **Jabber / XMPP**
-Join the //salix// chatroom on the //chat.meticul.eu// jabber server.
+Join the //#salix// channel on //irc.libera.chat// network.
 :  **Support Forum**
-http://forum.salixos.org
+https://forum.salixos.org
 :  **Mailing-List : salix-main AT lists.sourceforge.net**
 Registration and archives:
 https://lists.sourceforge.net/lists/listinfo/salix-main
@@ -148,7 +148,9 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 **spi**(8),
 **spkg**(8),
 **slapt-src**(8),
-**wicd**(8)
+**nm-applet**(1),
+**nmtui**(1),
+**nmcli**(1)
 
 
 = AUTHORS =
