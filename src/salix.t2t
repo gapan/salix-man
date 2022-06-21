@@ -19,12 +19,6 @@ manual page for more details.
 
 = PACKAGE MANAGEMENT =
 
-:  **spi**
-Search for, install and update packages and SlackBuilds from the
-repositories. **spi** is an wrapper around **slapt-get** and
-**slapt-src** and is more convenient to use, but only offers the most
-basic functionality of both. If you want to use more advanced features
-of these tools, you should use them directly.
 :  **slapt-get**
 Search for, install and update packages from the repositories.
 **Gslapt** provides the same functionality with a graphical interface.
@@ -36,6 +30,11 @@ Install, update and remove packages that you have downloaded/built
 locally. This is a faster alternative to the Slackware **pkgtools**
 (**installpkg**, **upgradepkg** and **removepkg**) which are also
 available.
+:  **flatpak**
+Install software in an isolated system-wide or per-user mode.  In the
+Flatpak model, applications are distributed independently from the host
+system they are used on, and they are isolated from the host system
+('sandboxed') to some degree, at runtime.
 
 
 = SALIXTOOLS =
@@ -136,21 +135,21 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 = SEE ALSO =
 
 **clocksetup**(8),
+**flatpak**(8),
 **keyboardsetup**(8),
 **localesetup**(8),
 **modprobe**(8),
 **modprobe.conf**(5),
+**nm-applet**(1),
+**nmcli**(1)
+**nmtui**(1),
 **pkgtool**(8),
 **reposetup**(8),
 **service**(8),
 **servicesetup**(8),
 **slapt-get**(8),
-**spi**(8),
-**spkg**(8),
 **slapt-src**(8),
-**nm-applet**(1),
-**nmtui**(1),
-**nmcli**(1)
+**spkg**(8),
 
 
 = AUTHORS =
