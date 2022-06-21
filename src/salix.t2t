@@ -139,8 +139,9 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 **localesetup**(8),
 **modprobe**(8),
 **modprobe.conf**(5),
+**netsetup**(8),
 **nm-applet**(1),
-**nmcli**(1)
+**nmcli**(1),
 **nmtui**(1),
 **pkgtool**(8),
 **reposetup**(8),
@@ -149,6 +150,8 @@ https://lists.sourceforge.net/lists/listinfo/salix-main
 **slapt-get**(8),
 **slapt-src**(8),
 **spkg**(8),
+**update-all**(8),
+**usersetup**(8)
 
 
 = AUTHORS =
