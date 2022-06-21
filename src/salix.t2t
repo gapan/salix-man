@@ -110,7 +110,7 @@ using **netsetup** (run it from a terminal with superuser priviliges).
 :  **Translate**
 You can help with translating various componenents of the distribution
 using. Visit the following page for more details:
-http://salixos.org/translate.html
+https://salixos.org/translate.html
 :  **Package Submissions**
 You can submit packages for inclusion in the Salix repositories using
 our package submission tracker (but please read the wiki about package
