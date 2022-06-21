@@ -24,7 +24,6 @@ Search for, install and update packages from the repositories.
 **Gslapt** provides the same functionality with a graphical interface.
 :  **slapt-src**
 Search for, install and update SlackBuilds from the repositories.
-**Sourcery** provides the same functionality with a graphical interface.
 :  **spkg**
 Install, update and remove packages that you have downloaded/built
 locally. This is a faster alternative to the Slackware **pkgtools**
